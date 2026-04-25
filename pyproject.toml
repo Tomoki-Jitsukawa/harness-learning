@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harness-learning"
+version = "0.1.0"
+description = "A minimal agent harness learning project"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+
+[project.scripts]
+harness-learning = "harness_learning.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["harness_learning*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
