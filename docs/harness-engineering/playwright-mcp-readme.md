@@ -78,3 +78,5 @@ Evaluator から実行した方が安定し、context cost も低い。探索的
 
 このリポジトリは現時点で frontend app を持たないため、Playwright MCP の導入は premature。
 UI を生成・評価する教材タスクを追加した時点で、CLI と MCP の比較実験として扱うのがよい。
+
+## 要点追記
